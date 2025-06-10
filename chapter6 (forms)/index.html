@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>To retrieve data</h1>
+
+    <form action="/submit.php" method="post"> <!--this is for getting the post-->
+        <div>
+            <label for="Username"> Enter your Username:- </label>
+            <!-- it is used to put a label on it like when we buy something it has a label right this is same as that -->
+            <!-- here the for is used to connect the label tag with the input tag n the id acts as a identification of unique as there cant be same aadhar no. in ur aadhar card n all right-->
+            <input type="text" id="Username" name="Username" placeholder="Enter ur username" autofocus>
+        </div>
+        <div>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+            <!-- the radio tag does the work of selecting only one out of the other options i.e. it checks the name as the name is same for that name it checks so that it can only select on option  -->
+        </div>
+
+        <div>
+            <input type="checkbox" name="age" id="option" value="above">
+            <label for="options">are u above 18</label>
+
+        </div>
+        <label for="comment">Enter ur comment here</label>
+        <br>
+        <textarea id="comment" name="comments" rows="4" cols="50">Enter comments here</textarea>
+        <!-- we can either mention the rows n column or else just leave it-->
+
+        <div>
+            <select name="fruits">
+                <option value="apple">apple</option>
+                <option value="mango">mango</option>
+                <option value="strawberry">strawberry</option>
+
+
+            </select>
+        </div>
+
+        <div>
+            <button type="button">Click Me</button>
+        </div>
+
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+        
+        <!-- 
+            <input type="text" required> -- this will make this part an compulsory one 
+            <input type="text" autofocus> -- this makes the cursor to automatically point in that
+            <input type="text" placeholder="something is written"> this shows whatever is in that box
+            
+        -->
+            
+    </form>
+
+</body>
+
+</html>
